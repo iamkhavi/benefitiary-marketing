@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/footer"
 import { Logo, LogoIcon } from "@/components/ui/logo"
 import { BenefitiaryNavbar } from "@/components/layout/benefitiary-navbar"
 import { GrantMatchingWidget, AIWritingWidget } from "@/components/ui/hero-widgets"
+import { OnboardingPreviewWidget } from "@/components/ui/onboarding-preview-widget"
 import { VerticalTestimonials } from "@/components/ui/vertical-testimonials"
 import { 
   Heart, 
@@ -120,6 +121,11 @@ export default function Home() {
                   {/* Grant Matching Widget - Main focus */}
                   <div className="relative z-20">
                     <GrantMatchingWidget />
+                  </div>
+
+                  {/* Onboarding Preview Widget - Top right */}
+                  <div className="hidden lg:block absolute -top-8 -right-16 z-30">
+                    <OnboardingPreviewWidget />
                   </div>
 
                   {/* AI Writing Widget - Hidden on mobile, positioned below and slightly offset on desktop */}
