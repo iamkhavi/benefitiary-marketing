@@ -7,6 +7,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   
+  // Ensure CSS is properly processed
+  swcMinify: true,
+  
   // Enable experimental features for better performance
   experimental: {
     optimizePackageImports: ['lucide-react', '@radix-ui/react-select', '@radix-ui/react-checkbox'],
