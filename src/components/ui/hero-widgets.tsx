@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import SearchIcon from '@mui/icons-material/Search';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
