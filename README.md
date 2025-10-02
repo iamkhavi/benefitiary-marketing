@@ -6,16 +6,15 @@ The marketing website for Benefitiary - deployed to `benefitiary.com`
 
 This repository contains the marketing website including:
 - Landing page with hero section and features
-- Authentication pages (login/signup)
-- Onboarding flow (organization setup + preferences)
 - Marketing components and layouts
+- CTA buttons that redirect to console app for auth
 
 ## User Flow
 
 1. **Landing Page** (`benefitiary.com`) → Marketing content
-2. **Sign Up** → User creates account
-3. **Onboarding** → Organization setup + preferences
-4. **Redirect** → After completion → `app.benefitiary.com` (console app)
+2. **Sign Up/Login** → Redirects to `app.benefitiary.com` (console app)
+3. **Onboarding** → Handled in console app
+4. **Dashboard** → User stays in console app
 
 ## Related Repositories
 
@@ -26,8 +25,8 @@ This repository contains the marketing website including:
 
 - Next.js 15 with App Router
 - TailwindCSS + shadcn/ui
-- BetterAuth for authentication
 - TypeScript
+- Pure marketing site (no auth/database)
 
 ## Development
 
@@ -40,4 +39,4 @@ npm run dev
 
 Deploy to `benefitiary.com` domain.
 
-After onboarding completion, users are redirected to `app.benefitiary.com` (console app).
+All auth/signup buttons redirect users to `app.benefitiary.com` (console app).

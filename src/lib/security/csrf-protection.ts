@@ -102,7 +102,7 @@ export function getSecurityHeaders(): Record<string, string> {
       "style-src 'self' 'unsafe-inline'", // Needed for Tailwind
       "img-src 'self' data: https:",
       "font-src 'self' https://fonts.gstatic.com",
-      "connect-src 'self' https://api.dodopayments.com",
+      "connect-src 'self'",
       "frame-ancestors 'none'",
     ].join('; '),
     
